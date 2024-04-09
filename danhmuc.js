@@ -7,6 +7,7 @@ var scrollSeenProduct = document.querySelector('.category-seen-product')
 window.onscroll = function() {
   scrollButton() 
   scrollButton2()
+  scrollButton3()
 }
 
 let myButton = document.querySelector('.button-scroll-on-top');
@@ -36,5 +37,18 @@ function scrollButton2() {
     scrollHeading.classList.remove('active');
   }
 }
+
+
+function scrollButton3() {
+  if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000 ) {
+    scrollSeenProduct.style.position = "absolute"
+  } else {
+    scrollSeenProduct.style.position = null
+  }
+}
+
+
+
+
 
 

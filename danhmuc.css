@@ -68,7 +68,8 @@
 }
 .column-33:hover .body-cart i  {
     display: flex;
-    animation: fadeIn ease-in 0.4s;
+    transform: scale(1.2);
+    animation: fadeIn ease-in 0.5s;
 }
 .column-33 .img-extra {
     width: 20%;
